@@ -82,7 +82,7 @@ onMounted(() => {
 
 const isInCart = computed(() => {
   let res = false;
-  userStore.cart.fortEach((prod) => {
+  userStore.cart.forEach((prod) => {
     if (route.params.id === prod.id) {
       res = true;
     }
