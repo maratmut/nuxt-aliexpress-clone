@@ -116,6 +116,7 @@ const goToCheckout = () => {
   res.forEach((item) => userStore.checkout.push(toRaw(item)));
   return navigateTo('/checkout');
 };
+
 const products = [
   {
     id: 1,
