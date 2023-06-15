@@ -27,7 +27,6 @@
   </div>
 </template>
 <script setup>
-import { client } from 'process';
 
 /* const client = useSupabaseClient();
 const user = useSupabaseUser(); */
