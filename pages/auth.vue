@@ -28,14 +28,14 @@
 </template>
 <script setup>
 
-/* const client = useSupabaseClient();
-const user = useSupabaseUser(); */
+const client = useSupabaseClient();
+const user = useSupabaseUser(); 
 
-/* watchEffect(() => {
+ watchEffect(() => {
     if(user.value) {
         return navigateTo('/')
     }
-}) */
+})
 
 const login = async (prov) => {
   const { data, error } = await client.auth.signInWithOAuth({

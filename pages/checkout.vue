@@ -106,6 +106,7 @@ import MainLayout from '~/layouts/MainLayout.vue';
 import { useUserStore } from '~/stores/user';
 
 const userStore = useUserStore();
+const user = useSupabaseUser()
 
 const route = useRoute();
 
@@ -117,6 +118,8 @@ let total = ref(0);
 let clientSecret = null;
 let currentAddress = ref(null);
 let isProcessing = ref(false);
+
+
 
 onMounted(() => {
   isProcessing.value = true;
